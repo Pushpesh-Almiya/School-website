@@ -2,7 +2,7 @@ import React from 'react';
 
 function Card({ cource }) {
   return (
-    <div className="max-w-sm bg-white rounded-lg overflow-hidden shadow-lg m-6 transform transition-transform hover:scale-105 hover:shadow-2xl duration-300 border border-gray-200">
+    <div className="max-w-sm mx-auto bg-white rounded-lg overflow-hidden shadow-lg m-6 transform transition-transform hover:scale-105 hover:shadow-2xl duration-300 border border-gray-200">
       {/* Image */}
       <div className="h-48 w-full bg-cover bg-center" style={{ backgroundImage: `url(${cource.img})` }}>
       </div>

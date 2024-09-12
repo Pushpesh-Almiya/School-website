@@ -149,99 +149,99 @@ function Staff() {
 
   return (
     <div name="staff" className="py-16 px-6">
-      <h1
-        id="educators"
-        className=" text-3xl md:text-4xl font-bold text-[#BF2EF0] text-center pt-2"
+  <h1
+    id="educators"
+    className="text-3xl md:text-4xl font-bold text-[#BF2EF0] text-center pt-2"
+  >
+    Educators
+  </h1>
+  <div className="py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-16 gap-x-5 justify-center items-center">
+    {displayedEducators.map((teacher, index) => (
+      <div
+        key={index}
+        className="bg-[#FFF6EA] shadow-lg rounded-lg overflow-hidden w-80 mx-auto transform hover:scale-105 transition-transform duration-300 flex justify-center items-center flex-col"
       >
-        Educators
-      </h1>
-      <div className="py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-16 gap-x-5">
-        {displayedEducators.map((teacher, index) => (
-          <div
-            key={index}
-            className="bg-[#FFF6EA] shadow-lg rounded-lg overflow-hidden w-80 mx-4 transform hover:scale-105 transition-transform duration-300 flex justify-center items-center flex-col"
-          >
-            {/* Profile Photo */}
-            <img
-              src={teacher.img}
-              alt={teacher.name}
-              className="w-3/4 h-52 object-cover object-top"
-            />
+        {/* Profile Photo */}
+        <img
+          src={teacher.img}
+          alt={teacher.name}
+          className="w-3/4 h-52 object-cover object-top"
+        />
 
-            {/* Card Content */}
-            <div className="p-4 flex flex-col items-center justify-center">
-              <h3 className="text-2xl font-bold">{teacher.name}</h3>
-              <h4 className="text-lg text-[#88227A] mb-2">{teacher.title}</h4>
-              <p className="text-gray-600 italic">"{teacher.quote}"</p>
-            </div>
-          </div>
-        ))}
-
-        {/* View All Button (only visible on small screens) */}
-        {!showAll && (
-          <div className="flex justify-center mt-6 md:hidden">
-            <button
-              onClick={() => setShowAll(true)}
-              className="px-4 py-2 bg-[#BF2EF0] font-semibold text-white rounded-lg hover:bg-[#9c1fca] transition-colors duration-300"
-            >
-              View All
-            </button>
-          </div>
-        )}
-
-        {/* Pushpesh Almiya's card */}
-        <div className="bg-[#FFF6EA] shadow-lg rounded-lg overflow-hidden w-80 mx-4 transform hover:scale-105 transition-transform duration-300 flex justify-center items-center flex-col">
-          <img
-            src={PushpeshAlmiya.img}
-            alt={PushpeshAlmiya.name}
-            className="w-3/4 h-52 object-cover object-top"
-          />
-          <div className="p-4 flex flex-col items-center justify-center">
-            <h3 className="text-2xl font-bold">{PushpeshAlmiya.name}</h3>
-            <h4 className="text-lg text-[#88227A] mb-2">
-              {PushpeshAlmiya.title}
-            </h4>
-            <p className="text-gray-600 italic">"{PushpeshAlmiya.quote}"</p>
-          </div>
+        {/* Card Content */}
+        <div className="p-4 flex flex-col items-center justify-center">
+          <h3 className="text-2xl font-bold">{teacher.name}</h3>
+          <h4 className="text-lg text-[#88227A] mb-2">{teacher.title}</h4>
+          <p className="text-gray-600 italic">"{teacher.quote}"</p>
         </div>
-
-        {/* View Less Button (only visible on small screens) */}
-        {showAll && (
-          <div className="flex justify-center mt-6 md:hidden">
-            <button
-              onClick={() => setShowAll(false)}
-              className="px-4 py-2 bg-[#BF2EF0] font-semibold text-white rounded-lg hover:bg-[#9c1fca] transition-colors duration-300"
-            >
-              View Less
-            </button>
-          </div>
-        )}
       </div>
+    ))}
 
-      <h1 className="text-3xl md:text-4xl font-bold text-[#BF2EF0] text-center mt-10 mb-6">
-        Administrative Staff
-      </h1>
-      <div className="py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-8 gap-x-5">
-        {OfficeStaff.map((staff, index) => (
-          <div
-            key={index}
-            className="shadow-lg rounded-lg overflow-hidden w-80 mx-4 transform hover:scale-105 transition-transform duration-300 flex justify-center items-center flex-col"
-          >
-            {/* Profile Photo */}
-            <img
-              src={ProfilePhoto}
-              alt={staff.name}
-              className="w-3/4 h-52 object-cover object-top"
-            />
+    {/* View All Button (only visible on small screens) */}
+    {!showAll && (
+      <div className="flex justify-center mt-6 md:hidden">
+        <button
+          onClick={() => setShowAll(true)}
+          className="px-4 py-2 bg-[#BF2EF0] font-semibold text-white rounded-lg hover:bg-[#9c1fca] transition-colors duration-300"
+        >
+          View All
+        </button>
+      </div>
+    )}
 
-            {/* Card Content */}
-            <div className="p-6 flex flex-col items-center justify-center">
-              <h3 className="text-2xl font-bold">{staff.name}</h3>
-            </div>
-          </div>
-        ))}
+    {/* Pushpesh Almiya's card */}
+    <div className="bg-[#FFF6EA] shadow-lg rounded-lg overflow-hidden w-80 mx-auto transform hover:scale-105 transition-transform duration-300 flex justify-center items-center flex-col">
+      <img
+        src={PushpeshAlmiya.img}
+        alt={PushpeshAlmiya.name}
+        className="w-3/4 h-52 object-cover object-top"
+      />
+      <div className="p-4 flex flex-col items-center justify-center">
+        <h3 className="text-2xl font-bold">{PushpeshAlmiya.name}</h3>
+        <h4 className="text-lg text-[#88227A] mb-2">{PushpeshAlmiya.title}</h4>
+        <p className="text-gray-600 italic">"{PushpeshAlmiya.quote}"</p>
       </div>
     </div>
+
+    {/* View Less Button (only visible on small screens) */}
+    {showAll && (
+      <div className="flex justify-center mt-6 md:hidden">
+        <button
+          onClick={() => setShowAll(false)}
+          className="px-4 py-2 bg-[#BF2EF0] font-semibold text-white rounded-lg hover:bg-[#9c1fca] transition-colors duration-300"
+        >
+          View Less
+        </button>
+      </div>
+    )}
+  </div>
+
+  <h1 className="text-3xl md:text-4xl font-bold text-[#BF2EF0] text-center mt-10 mb-6">
+    Administrative Staff
+  </h1>
+  <div className="py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-8 gap-x-5">
+    {OfficeStaff.map((staff, index) => (
+      <div
+        key={index}
+        className="shadow-lg rounded-lg overflow-hidden w-80 mx-auto transform hover:scale-105 transition-transform duration-300 flex justify-center items-center flex-col"
+      >
+        {/* Profile Photo */}
+        <img
+          src={ProfilePhoto}
+          alt={staff.name}
+          className="w-3/4 h-52 object-cover object-top"
+        />
+
+        {/* Card Content */}
+        <div className="p-6 flex flex-col items-center justify-center">
+          <h3 className="text-2xl font-bold">{staff.name}</h3>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+
   );
 }
 

@@ -4,8 +4,12 @@ import conf from "../conf/conf";
 
 function Contact() {
 const {publicKey,serviceId,templateId} = conf;
-//Todo :- Reset value after submit the form
-const [value, setValue] = useState("")
+const [formValues, setFormValues] = useState({
+  user_name: "",
+  user_email: "",
+  message: ""
+});
+const [successMessage,setSuccessMessage]=useState("")
 
   const form = useRef();
 
@@ -20,6 +24,12 @@ const [value, setValue] = useState("")
       .then(
         () => {
           console.log('SUCCESS!');
+          setSuccessMessage("Thank you! Your message has been sent.");
+          setFormValues({
+            user_name: "",
+            user_email: "",
+            message: ""
+          });
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -27,11 +37,19 @@ const [value, setValue] = useState("")
       );
   };
 
+  const handleChange = (e) => {
+    setFormValues({ ...formValues, [e.target.name]: e.target.value });
+  };
   return (
     <div name="contact" className="min-h-screen bg-[#FFF6EA] flex flex-col justify-center items-center py-10 px-1 md:px-6">
       <div className="w-full md:w-2/3 lg:w-1/2 p-8 rounded-lg">
       <h1 className="font-bold text-3xl md:text-4xl text-center mb-8 text-[#BF2EF0] ">Get in Touch</h1>
-        
+         {/* Success Message */}
+         {successMessage && (
+          <div className="text-center text-green-500 mb-4 font-semibold">
+            {successMessage}
+          </div>
+        )}
         <form ref={form} onSubmit={sendEmail} className="flex flex-col space-y-6">
           {/* Email Field */}
           <div>
@@ -39,6 +57,8 @@ const [value, setValue] = useState("")
             <input
               type="text"
               id="name"
+              value={formValues.user_name}
+              onChange={handleChange}
               name="user_name"
               className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#ED3EF7]"
               placeholder="Your Name"
@@ -49,6 +69,8 @@ const [value, setValue] = useState("")
             <input
               type="email"
               id="email"
+              value={formValues.user_email}
+              onChange={handleChange}
               name="user_email"
               className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#ED3EF7]"
               placeholder="youremail@example.com"
@@ -61,6 +83,8 @@ const [value, setValue] = useState("")
             <textarea
               id="message"
               name="message"
+              value={formValues.message}
+              onChange={handleChange}
               className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#ED3EF7]"
               rows="5"
               placeholder="Type your message here..."

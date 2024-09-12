@@ -17,7 +17,7 @@ function About() {
         </div>
 
         <div className="flex flex-wrap">
-          <div className="w-full md:w-1/2 px-6 mb-6 md:mb-0">
+          <div className="w-full md:w-1/2 md:px-6 mb-6 md:mb-0">
             <p className="text-gray-700 text-lg leading-relaxed">
               We offer a comprehensive curriculum that includes the Science
               stream, Computer classes, and smart classrooms. Our dedicated
@@ -29,7 +29,7 @@ function About() {
               engaging learning environment for all students.
             </p>
           </div>
-          <div className="w-full md:w-1/2 px-6">
+          <div className="w-full md:w-1/2 md:px-6">
             <p className="text-gray-700 text-lg leading-relaxed">
               GIC Darmiyan also offers IT as a vocational subject, preparing
               students for the challenges of tomorrow by equipping them with the

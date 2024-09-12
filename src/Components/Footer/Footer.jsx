@@ -22,7 +22,7 @@ function Footer() {
             <Link to="/">
               <Logo width="90px" />
             </Link>
-            <h1 className="text-2xl font-bold text-white">GIC Darmiyan</h1>
+            <h1 className="text-xl md:text-2xl font-bold text-white">GIC Darmiyan</h1>
           </div>
           <ul className="flex w-full flex-col space-y-2 items-center md:items-start px-20 md:px-28">
             {navItems.map((item) => (
@@ -33,7 +33,7 @@ function Footer() {
                   spy={true}
                   offset={-50}
                   duration={500}
-                  className="text-[#FFF6EA] text-xl font-semibold hover:text-[#FEECB3] transition-colors duration-200 flex items-center"
+                  className="text-[#FFF6EA] text-sm md:text-xl font-semibold hover:text-[#FEECB3] transition-colors duration-200 flex items-center"
                 >
                   <span className="mr-2">{item.icon}</span>
                   {item.name}
