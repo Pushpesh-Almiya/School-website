@@ -71,17 +71,17 @@ function Footer() {
           <p className="text-[#FFF6EA]">Stay connected for updates!</p>
           <div className="mt-4">
             <div className="flex space-x-4">
-              <span className="bg-[#FEECB3] p-2 rounded-full text-[#BF2EF0]">
+              <span className="bg-white p-2 rounded-full text-[#BF2EF0]">
                 <a href="tel:+919927259263">
                   <FaPhoneAlt />
                 </a>
               </span>
-              <span className="bg-[#FEECB3] p-2 rounded-full text-[#BF2EF0]">
+              <span className="bg-white p-2 rounded-full text-[#BF2EF0]">
                 <a href="mailto:almiyapushpesh55@gmail.com">
                   <FaEnvelope />
                 </a>
               </span>
-              <span className="bg-[#FEECB3] p-2 rounded-full text-[#BF2EF0]">
+              <span className="bg-white p-2 rounded-full text-[#BF2EF0]">
                 <a
                   href="https://maps.app.goo.gl/uocRWj33sp9joHEA6"
                   target="_blank"

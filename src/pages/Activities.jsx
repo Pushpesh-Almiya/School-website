@@ -12,7 +12,7 @@ const ActivitiesPage = () => {
       <div className="flex flex-col md:flex-row w-full bg-[#FFF6EA] rounded-lg overflow-hidden">
         
         {/* Image: Display second on mobile, first on desktop */}
-        <div className="w-full md:w-1/2 p-4 md:p-8 order-2 md:order-1">
+        <div className="w-full md:w-1/2 p-1 md:p-8 order-2 md:order-1">
           <img
             src={Activities}
             alt="Activities"

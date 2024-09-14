@@ -17,103 +17,103 @@ function Staff() {
   const Educator = [
     {
       img: ProfilePhoto,
-      name: "Mr. Sanjay Joshi Sir",
+      name: "Mr. Sanjay Joshi",
       title: "Principal",
       quote: "Leading with wisdom and care",
     },
     {
       img: ProfilePhoto,
-      name: "Mr. Suryanath Pal Sir",
+      name: "Mr. Suryanath Pal",
       title: "Hindi Educator",
       quote: "Empowering through language",
     },
     {
       img: ProfilePhoto,
-      name: "Mr. Manoj Kumar Sir",
+      name: "Mr. Manoj Kumar",
       title: "Biology Educator",
       quote: "Understanding life through biology",
     },
     {
       img: ProfilePhoto,
-      name: "Mr. Harish Singh Bhandari Sir",
+      name: "Mr. Harish Singh Bhandari",
       title: "Sports Trainer",
       quote: "Training minds and bodies for excellence",
     },
     {
       img: ProfilePhoto,
-      name: "Mr. Jay Prakash Sir",
+      name: "Mr. Jay Prakash",
       title: "Social Science Educator",
       quote: "Economics for a better tomorrow",
     },
     {
       img: ProfilePhoto,
-      name: "Mr. Girish Chandra Lohani Sir",
+      name: "Mr. Girish Chandra Lohani",
       title: "Maths Educator",
       quote: "Exploring the laws of the universe",
     },
     {
       img: ProfilePhoto,
-      name: "Mr. Hemwati Nandan Sir",
+      name: "Mr. Hemwati Nandan",
       title: "Sanskrit Educator",
       quote: "Preserving ancient wisdom",
     },
     {
       img: ProfilePhoto,
-      name: "Mr. Surendra Kumar Sir",
+      name: "Mr. Surendra Kumar",
       title: "English Educator",
       quote: "Crafting skills for life through language",
     },
     {
       img: ProfilePhoto,
-      name: "Mr. Manoj Kumar Sir",
+      name: "Mr. Manoj Kumar",
       title: "Social Science Educator",
       quote: "Shaping perspectives on society",
     },
     {
       img: ProfilePhoto,
-      name: "Mr. Keshav Datt Joshi Sir",
+      name: "Mr. Keshav Dutt Joshi",
       title: "Hindi Educator",
       quote: "Enriching minds through Hindi",
     },
     {
       img: ProfilePhoto,
-      name: "Mrs. Munni Devi Ma'am",
+      name: "Mrs. Munni Tamta",
       title: "Science Educator",
       quote: "Unveiling the wonders of science",
     },
     {
       img: ProfilePhoto,
-      name: "Lata Verma Ma'am",
+      name: "Lata Verma ma'am",
       title: "Drawing Educator",
       quote: "Expressing creativity through art",
     },
     {
       img: ProfilePhoto,
-      name: "Mr. Gopal Singh Bora Sir",
+      name: "Mr. Gopal Singh Bora",
       title: "Sociology Educator",
       quote: "Understanding society's fabric",
     },
     {
       img: ProfilePhoto,
-      name: "Mr. Manish Pandey Sir",
+      name: "Mr. Manish Pandey",
       title: "Political Science Educator",
       quote: "Empowering through political insight",
     },
     {
       img: ProfilePhoto,
-      name: "Mr. Vijay Shankar Joshi Sir",
+      name: "Mr. Vijay Shankar Joshi",
       title: "Sanskrit Educator",
       quote: "Reviving the essence of Sanskrit",
     },
     {
       img: ProfilePhoto,
-      name: "Mrs. Minakshi Sah Ma'am",
+      name: "Mrs. Minakshi Sah",
       title: "Chemistry Educator",
       quote: "Discovering the magic of chemistry",
     },
     {
       img: ProfilePhoto,
-      name: "Mrs. Hema Arya Ma'am",
+      name: "Mrs. Hema Arya",
       title: "English Educator",
       quote: "Mastering communication through English",
     },
@@ -122,18 +122,22 @@ function Staff() {
     {
       img: "https://via.placeholder.com/150",
       name: "Mr. Manoj Kumar Kandpal",
+      designation:"Chief Assistant"
     },
     {
       img: "https://via.placeholder.com/150",
       name: "Miss Deepa Kaira",
+      designation:"Junior Assistant"
     },
     {
       img: "https://via.placeholder.com/150",
       name: "Mr. Diwan Singh",
+      designation:"Attendant"
     },
     {
       img: "https://via.placeholder.com/150",
       name: "Mr. Kiran Prakash Singh Papola",
+      designation:"Attendant"
     },
   ];
 
@@ -170,8 +174,8 @@ function Staff() {
 
         {/* Card Content */}
         <div className="p-4 flex flex-col items-center justify-center">
-          <h3 className="text-2xl font-bold">{teacher.name}</h3>
-          <h4 className="text-lg text-[#88227A] mb-2">{teacher.title}</h4>
+          <h3 className="text-lg md:text-xl font-bold">{teacher.name}</h3>
+          <h4 className="text-sm md:text-lg text-[#88227A] mb-2">{teacher.title}</h4>
           <p className="text-gray-600 italic">"{teacher.quote}"</p>
         </div>
       </div>
@@ -197,8 +201,8 @@ function Staff() {
         className="w-3/4 h-52 object-cover object-top"
       />
       <div className="p-4 flex flex-col items-center justify-center">
-        <h3 className="text-2xl font-bold">{PushpeshAlmiya.name}</h3>
-        <h4 className="text-lg text-[#88227A] mb-2">{PushpeshAlmiya.title}</h4>
+        <h3 className="text-lg md:text-xl font-bold">{PushpeshAlmiya.name}</h3>
+        <h4 className="text-sm md:text-lg text-[#88227A] mb-2">{PushpeshAlmiya.title}</h4>
         <p className="text-gray-600 italic">"{PushpeshAlmiya.quote}"</p>
       </div>
     </div>
@@ -234,7 +238,8 @@ function Staff() {
 
         {/* Card Content */}
         <div className="p-6 flex flex-col items-center justify-center">
-          <h3 className="text-2xl font-bold">{staff.name}</h3>
+          <h3 className="text-lg md:text-xl font-bold text-center">{staff.name}</h3>
+          <h4 className="text-sm md:text-lg text-[#88227A] mb-2">{staff.designation}</h4>
         </div>
       </div>
     ))}
