@@ -24,7 +24,7 @@ function Navbar() {
   ];
 
   return (
-    <header className="py-2 shadow-lg bg-[#BF2EF0] fixed z-50 w-full">
+    <header className="py-2 px-4 shadow-lg bg-[#BF2EF0] fixed z-50 w-full">
   <nav className="container mx-auto flex justify-between lg:justify-between items-center text-gray-100">
     {/* Logo Section */}
     <div className="flex-1 lg:flex-none">

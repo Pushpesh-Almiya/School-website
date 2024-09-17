@@ -1,9 +1,11 @@
 import React from "react";
+import { HeroLandscape } from "../assets";
 
 function About() {
   return (
     <section name="about" className="py-16 px-6 bg-[#FFF6EA]">
       <div className="container mx-auto">
+        {/* Header Section */}
         <div className="text-center mb-12">
           <h2 className="font-bold text-3xl md:text-4xl text-center mb-6 text-[#BF2EF0]">
             About GIC Darmiyan
@@ -16,26 +18,26 @@ function About() {
           </p>
         </div>
 
-        <div className="flex flex-wrap">
-          <div className="w-full md:w-1/2 md:px-6 mb-6 md:mb-0">
-            <p className="text-gray-700 text-lg leading-relaxed">
+        {/* Content Section */}
+        <div className="flex flex-wrap md:flex-nowrap">
+          {/* Text Content */}
+          <div className="w-full md:w-1/2 md:px-6 mb-6 md:mb-0 order-2 md:order-1">
+            <p className="text-gray-700 text-lg leading-relaxed mb-6">
               We offer a comprehensive curriculum that includes the Science
               stream, Computer classes, and smart classrooms. Our dedicated
               faculty ensures the holistic development of each student,
-              addressing both their academic and personal growth.We also provide
+              addressing both their academic and personal growth. We also provide
               extracurricular activities that foster creativity and teamwork,
               helping students discover their passions beyond academics. Our
               state-of-the-art facilities are designed to create a dynamic and
               engaging learning environment for all students.
             </p>
-          </div>
-          <div className="w-full md:w-1/2 md:px-6">
             <p className="text-gray-700 text-lg leading-relaxed">
               GIC Darmiyan also offers IT as a vocational subject, preparing
               students for the challenges of tomorrow by equipping them with the
               necessary technical skills and a strong moral foundation. We
               strive to provide cutting-edge education in a rural setting,
-              ensuring our students are ready for the future.In addition to IT,
+              ensuring our students are ready for the future. In addition to IT,
               GIC Darmiyan emphasizes skill-based learning through practical
               workshops and real-world projects, giving students hands-on
               experience in various fields. Our goal is to nurture well-rounded
@@ -43,14 +45,24 @@ function About() {
               lives, contributing positively to society.
             </p>
           </div>
+
+          {/* Image Section */}
+          <div className="w-full md:w-1/2 p-1 md:p-8 order-1 md:order-2">
+            <img
+              src={HeroLandscape}
+              alt="Activities"
+              className="h-64 md:h-full w-full object-cover rounded-lg"
+            />
+          </div>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4  gap-4 mt-12 text-xl md:text-2xl font-semibold md:font-bold">
-          <div >
+        {/* Stats Section */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-12 text-xl md:text-2xl font-semibold md:font-bold">
+          <div>
             <h1 className="text-center text-[#BF2EF0]">3K+</h1>
             <h2 className="text-center">Enrollments</h2>
           </div>
-          <div >
+          <div>
             <h1 className="text-center text-[#BF2EF0]">20+</h1>
             <h2 className="text-center">Staff Members</h2>
           </div>
@@ -58,7 +70,7 @@ function About() {
             <h1 className="text-center text-[#BF2EF0]">248</h1>
             <h2 className="text-center">Current Students</h2>
           </div>
-          <div >
+          <div>
             <h1 className="text-center text-[#BF2EF0]">95%</h1>
             <h2 className="text-center">Student Satisfaction Rate</h2>
           </div>

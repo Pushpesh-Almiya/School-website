@@ -163,7 +163,7 @@ function Staff() {
     {displayedEducators.map((teacher, index) => (
       <div
         key={index}
-        className="bg-[#FFF6EA] shadow-lg rounded-lg overflow-hidden w-80 mx-auto transform hover:scale-105 transition-transform duration-300 flex justify-center items-center flex-col"
+        className="bg-[#FFF6EA] h-full shadow-lg rounded-lg overflow-hidden w-80 mx-auto transform hover:scale-105 transition-transform duration-300 flex justify-center items-center flex-col"
       >
         {/* Profile Photo */}
         <img
@@ -227,7 +227,7 @@ function Staff() {
     {OfficeStaff.map((staff, index) => (
       <div
         key={index}
-        className="shadow-lg rounded-lg overflow-hidden w-80 mx-auto transform hover:scale-105 transition-transform duration-300 flex justify-center items-center flex-col"
+        className="shadow-lg h-full rounded-lg overflow-hidden w-80 mx-auto transform hover:scale-105 transition-transform duration-300 flex justify-center items-center flex-col"
       >
         {/* Profile Photo */}
         <img

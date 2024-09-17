@@ -54,14 +54,11 @@ function Footer() {
             <FaEnvelope className="text-white" />
             <span className="text-[#FFF6EA]">principaldarmiyan@gmail.com</span>
           </div>
-          <div className="flex items-center justify-center space-x-2">
+          <div className="flex items-center text-center md:text-left space-x-2">
             <FaMapMarkerAlt className="text-white mb-6" />
-            <div className="flex flex-col text-center items-center justify-center">
-              <h1 className="text-[#FFF6EA]">
-                GIC Darmiyan Block-Takula, Almora
-              </h1>
-              <h1>Uttarakhand, 263638</h1>
-            </div>
+              <sapn className="text-[#FFF6EA]">
+                GIC Darmiyan Block-Takula, Almora, Uttarakhand, 263638
+              </sapn>
           </div>
         </div>
 

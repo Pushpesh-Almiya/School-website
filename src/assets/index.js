@@ -5,4 +5,6 @@ import science from "./science.jpeg"
 import drawing from "./drawing.jpeg"
 import Activities from "./sports.jpg";
 import ProfilePhoto from "./profilePhoto.jpg";
-export {computer_Science, maths,Information_technology,science,drawing, Activities,ProfilePhoto}
+import HeroPortrait from "./HeroPortrait.jpg"
+import HeroLandscape from "./HeroLandscape.jpg"
+export {computer_Science,HeroPortrait, HeroLandscape, maths,Information_technology,science,drawing, Activities,ProfilePhoto}
