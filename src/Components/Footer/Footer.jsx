@@ -94,7 +94,8 @@ function Footer() {
 
       <div className="text-center text-white mt-8">
         <p>&copy; {new Date().getFullYear()} GIC Darmiyan. All Rights Reserved.</p>
-        <p >Developed & Maintained By <Link className="text-[#00509e] font-bold" to="https://pushpesh-portfolio.netlify.app/">Pushpesh Almiya</Link></p>
+        <p >Developed & Maintained By <a className="text-[#00509e] font-bold" target="_blank"
+      rel="noopener noreferrer" href="https://pushpesh-portfolio.netlify.app/">Pushpesh Almiya</a></p>
       </div>
     </footer>
   );
