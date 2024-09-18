@@ -33,8 +33,8 @@ function Academic() {
   ];
 
   return (
-    <div name="academic" className="bg-[#FFF6EA] py-12 px-1 md:px-6">
-      <h2 className="text-3xl md:text-4xl text-center font-bold text-[#BF2EF0] mb-6 pt-4">
+    <div name="academic" className="bg-[#f0f4fa] py-12 px-1 md:px-6">
+      <h2 className="text-3xl md:text-4xl text-center font-bold text-[#003366] mb-6 pt-4">
         Academic Details
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-2">

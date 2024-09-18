@@ -14,7 +14,7 @@ function Footer() {
   ];
 
   return (
-    <footer className="bg-[#BF2EF0] py-10 text-gray-100">
+    <footer className="bg-navy-800 py-10 text-[#FFFFFF] text-sm md:text-lg">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl px-4">
         {/* Left Column: Logo and Navigation Links */}
         <div className="flex flex-col items-center">
@@ -33,7 +33,7 @@ function Footer() {
                   spy={true}
                   offset={-50}
                   duration={500}
-                  className="text-[#FFF6EA] text-sm md:text-xl font-semibold hover:text-[#FEECB3] transition-colors duration-200 flex items-center"
+                  className=" text-sm md:text-xl font-semibold hover:text-[#FEECB3] transition-colors duration-200 flex items-center"
                 >
                   <span className="mr-2">{item.icon}</span>
                   {item.name}
@@ -48,15 +48,15 @@ function Footer() {
           <h2 className="text-xl font-bold text-white mb-4">Contact Us</h2>
           <div className="flex items-center space-x-2 mb-2">
             <FaPhoneAlt className="text-white" />
-            <span className="text-[#FFF6EA]">+91 9927259263</span>
+            <span >+91 9927259263</span>
           </div>
           <div className="flex items-center space-x-2 mb-2">
             <FaEnvelope className="text-white" />
-            <span className="text-[#FFF6EA]">principaldarmiyan@gmail.com</span>
+            <span >principaldarmiyan@gmail.com</span>
           </div>
           <div className="flex items-center text-center md:text-left space-x-2">
             <FaMapMarkerAlt className="text-white mb-6" />
-              <sapn className="text-[#FFF6EA]">
+              <sapn>
                 GIC Darmiyan Block-Takula, Almora, Uttarakhand, 263638
               </sapn>
           </div>
@@ -65,20 +65,20 @@ function Footer() {
         {/* Right Column: Social Media (Placeholder for Future Use) */}
         <div className="flex flex-col items-center md:items-start">
           <h2 className="text-xl font-bold text-white mb-4">Follow Us</h2>
-          <p className="text-[#FFF6EA]">Stay connected for updates!</p>
+          <p >Stay connected for updates!</p>
           <div className="mt-4">
             <div className="flex space-x-4">
-              <span className="bg-white p-2 rounded-full text-[#BF2EF0]">
-                <a href="tel:+919927259263">
+              <span className="bg-white p-2 rounded-full text-[#00509e]">
+                <a href="tel:9927259263">
                   <FaPhoneAlt />
                 </a>
               </span>
-              <span className="bg-white p-2 rounded-full text-[#BF2EF0]">
-                <a href="mailto:almiyapushpesh55@gmail.com">
+              <span className="bg-white p-2 rounded-full text-[#00509e]">
+                <a href="mailto:principaldarmiyan@gmail.com">
                   <FaEnvelope />
                 </a>
               </span>
-              <span className="bg-white p-2 rounded-full text-[#BF2EF0]">
+              <span className="bg-white p-2 rounded-full text-[#00509e]">
                 <a
                   href="https://maps.app.goo.gl/uocRWj33sp9joHEA6"
                   target="_blank"
@@ -94,6 +94,7 @@ function Footer() {
 
       <div className="text-center text-white mt-8">
         <p>&copy; {new Date().getFullYear()} GIC Darmiyan. All Rights Reserved.</p>
+        <p >Developed & Maintained By <Link className="text-[#00509e] font-bold" to="https://pushpesh-portfolio.netlify.app/">Pushpesh Almiya</Link></p>
       </div>
     </footer>
   );

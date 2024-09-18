@@ -3,7 +3,7 @@ import { Footer, Navbar } from "./Components";
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-[#FFF6EA]">
+    <div className="min-h-screen flex flex-col bg-[#f0f4fa]">
       {/* Navbar */}
       <Navbar className="w-full" />
 

@@ -3,11 +3,11 @@ import { HeroLandscape } from "../assets";
 
 function About() {
   return (
-    <section name="about" className="py-16 px-6 bg-[#FFF6EA]">
+    <section name="about" className="py-16 px-6 bg-[#f0f4fa]">
       <div className="container mx-auto">
         {/* Header Section */}
-        <div className="text-center mb-12">
-          <h2 className="font-bold text-3xl md:text-4xl text-center mb-6 text-[#BF2EF0]">
+        <div className="mb-12">
+          <h2 className="font-bold text-3xl md:text-4xl text-center mb-6 text-[#003366]">
             About GIC Darmiyan
           </h2>
           <p className="mt-6 text-gray-700 text-lg leading-relaxed">
@@ -47,7 +47,7 @@ function About() {
           </div>
 
           {/* Image Section */}
-          <div className="w-full md:w-1/2 p-1 md:p-8 order-1 md:order-2">
+          <div className="w-full mb-5 md:mb-0 md:w-1/2 md:p-8 order-1 md:order-2">
             <img
               src={HeroLandscape}
               alt="Activities"
@@ -59,19 +59,19 @@ function About() {
         {/* Stats Section */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-12 text-xl md:text-2xl font-semibold md:font-bold">
           <div>
-            <h1 className="text-center text-[#BF2EF0]">3K+</h1>
+            <h1 className="text-center text-[#003366]">3K+</h1>
             <h2 className="text-center">Enrollments</h2>
           </div>
           <div>
-            <h1 className="text-center text-[#BF2EF0]">20+</h1>
+            <h1 className="text-center text-[#003366]">20+</h1>
             <h2 className="text-center">Staff Members</h2>
           </div>
           <div>
-            <h1 className="text-center text-[#BF2EF0]">248</h1>
+            <h1 className="text-center text-[#003366]">248</h1>
             <h2 className="text-center">Current Students</h2>
           </div>
           <div>
-            <h1 className="text-center text-[#BF2EF0]">95%</h1>
+            <h1 className="text-center text-[#003366]">95%</h1>
             <h2 className="text-center">Student Satisfaction Rate</h2>
           </div>
         </div>

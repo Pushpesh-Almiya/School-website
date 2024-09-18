@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { ProfilePhoto } from "../assets";
 import { Pushpesh } from "../assets/Staff";
 import useWindowSize from "../utils/useWindowSize";
+import { Link } from "react-router-dom";
 
 function Staff() {
   const [showAll, setShowAll] = useState(false);
@@ -146,16 +147,17 @@ function Staff() {
     name: "Mr. Pushpesh Almiya",
     title: "Information Technology Trainer",
     quote: "Innovation through technology",
+    portfolioLink: "https://pushpesh-portfolio.netlify.app/"
   };
 
   // Show either top 5 or all depending on 'showAll' state
   const displayedEducators = showAll ? Educator : Educator.slice(0, 5);
 
   return (
-    <div name="staff" className="py-16 px-6">
+    <div name="staff" className="py-16 px-6 bg-[#f0f4fa]">
   <h1
     id="educators"
-    className="text-3xl md:text-4xl font-bold text-[#BF2EF0] text-center pt-2"
+    className="text-3xl md:text-4xl font-bold text-[#003366] text-center pt-2"
   >
     Educators
   </h1>
@@ -163,7 +165,7 @@ function Staff() {
     {displayedEducators.map((teacher, index) => (
       <div
         key={index}
-        className="bg-[#FFF6EA] h-full shadow-lg rounded-lg overflow-hidden w-80 mx-auto transform hover:scale-105 transition-transform duration-300 flex justify-center items-center flex-col"
+        className="bg-[#f0f4fa] h-full shadow-lg rounded-lg overflow-hidden w-80 mx-auto transform hover:scale-105 transition-transform duration-300 flex justify-center items-center flex-col"
       >
         {/* Profile Photo */}
         <img
@@ -175,7 +177,7 @@ function Staff() {
         {/* Card Content */}
         <div className="p-4 flex flex-col items-center justify-center">
           <h3 className="text-lg md:text-xl font-bold">{teacher.name}</h3>
-          <h4 className="text-sm md:text-lg text-[#88227A] mb-2">{teacher.title}</h4>
+          <h4 className="text-sm md:text-lg text-[#003366] mb-2">{teacher.title}</h4>
           <p className="text-gray-600 italic">"{teacher.quote}"</p>
         </div>
       </div>
@@ -186,7 +188,7 @@ function Staff() {
       <div className="flex justify-center mt-6 md:hidden">
         <button
           onClick={() => setShowAll(true)}
-          className="px-4 py-2 bg-[#BF2EF0] font-semibold text-white rounded-lg hover:bg-[#9c1fca] transition-colors duration-300"
+          className="px-4 py-2 bg-[#00264d] font-semibold text-white rounded-lg hover:bg-navy-800 transition-colors duration-300"
         >
           View All
         </button>
@@ -194,7 +196,7 @@ function Staff() {
     )}
 
     {/* Pushpesh Almiya's card */}
-    <div className="bg-[#FFF6EA] shadow-lg rounded-lg overflow-hidden w-80 mx-auto transform hover:scale-105 transition-transform duration-300 flex justify-center items-center flex-col">
+    <div className="bg-[#f0f4fa] shadow-lg rounded-lg overflow-hidden w-80 mx-auto transform hover:scale-105 transition-transform duration-300 flex justify-center items-center flex-col">
       <img
         src={PushpeshAlmiya.img}
         alt={PushpeshAlmiya.name}
@@ -202,8 +204,16 @@ function Staff() {
       />
       <div className="p-4 flex flex-col items-center justify-center">
         <h3 className="text-lg md:text-xl font-bold">{PushpeshAlmiya.name}</h3>
-        <h4 className="text-sm md:text-lg text-[#88227A] mb-2">{PushpeshAlmiya.title}</h4>
+        <h4 className="text-sm md:text-lg text-[#003366] mb-2">{PushpeshAlmiya.title}</h4>
         <p className="text-gray-600 italic">"{PushpeshAlmiya.quote}"</p>
+        <Link
+      to={PushpeshAlmiya.portfolioLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="mt-4 text-white bg-[#00264d] hover:bg-navy-800 font-semibold px-4 py-2 rounded-md transition-colors duration-300"
+    >
+      View Portfolio
+    </Link>
       </div>
     </div>
 
@@ -212,7 +222,7 @@ function Staff() {
       <div className="flex justify-center mt-6 md:hidden">
         <button
           onClick={() => setShowAll(false)}
-          className="px-4 py-2 bg-[#BF2EF0] font-semibold text-white rounded-lg hover:bg-[#9c1fca] transition-colors duration-300"
+          className="px-4 py-2 bg-[#00264d] font-semibold text-white rounded-lg hover:bg-navy-800 transition-colors duration-300"
         >
           View Less
         </button>
@@ -220,7 +230,7 @@ function Staff() {
     )}
   </div>
 
-  <h1 className="text-3xl md:text-4xl font-bold text-[#BF2EF0] text-center mt-10 mb-6">
+  <h1 className="text-3xl md:text-4xl font-bold text-[#003366] text-center mt-10 mb-6">
     Administrative Staff
   </h1>
   <div className="py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-8 gap-x-5">
@@ -239,7 +249,7 @@ function Staff() {
         {/* Card Content */}
         <div className="p-6 flex flex-col items-center justify-center">
           <h3 className="text-lg md:text-xl font-bold text-center">{staff.name}</h3>
-          <h4 className="text-sm md:text-lg text-[#88227A] mb-2">{staff.designation}</h4>
+          <h4 className="text-sm md:text-lg text-[#003366] mb-2">{staff.designation}</h4>
         </div>
       </div>
     ))}

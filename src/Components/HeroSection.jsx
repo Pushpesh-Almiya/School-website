@@ -5,7 +5,7 @@ import {HeroPortrait} from '../assets';
 
 function HeroSection() {
   return (
-    <div className="relative w-full h-screen">
+    <div className="relative w-full h-screen ">
       {/* Background Image */}
       <img
         src={image1}
