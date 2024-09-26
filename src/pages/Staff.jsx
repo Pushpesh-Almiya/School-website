@@ -154,10 +154,10 @@ function Staff() {
   const displayedEducators = showAll ? Educator : Educator.slice(0, 5);
 
   return (
-    <div name="staff" className="py-16 px-6 bg-[#f0f4fa]">
+    <div name="staff" className="pt-10 px-3 md:px-6 bg-[#f0f4fa]">
   <h1
     id="educators"
-    className="text-3xl md:text-4xl font-bold text-[#003366] text-center pt-2"
+    className="text-3xl font-bold text-[#003366] text-center pt-2"
   >
     Educators
   </h1>
@@ -176,8 +176,8 @@ function Staff() {
 
         {/* Card Content */}
         <div className="p-4 flex flex-col items-center justify-center">
-          <h3 className="text-lg md:text-xl font-bold">{teacher.name}</h3>
-          <h4 className="text-sm md:text-lg text-[#003366] mb-2">{teacher.title}</h4>
+          <h3 className="text-lg font-bold">{teacher.name}</h3>
+          <h4 className="text-sm text-[#003366] mb-2">{teacher.title}</h4>
           <p className="text-gray-600 italic">"{teacher.quote}"</p>
         </div>
       </div>
@@ -203,8 +203,8 @@ function Staff() {
         className="w-3/4 h-52 object-cover object-top"
       />
       <div className="p-4 flex flex-col items-center justify-center">
-        <h3 className="text-lg md:text-xl font-bold">{PushpeshAlmiya.name}</h3>
-        <h4 className="text-sm md:text-lg text-[#003366] mb-2">{PushpeshAlmiya.title}</h4>
+        <h3 className="text-lg  font-bold">{PushpeshAlmiya.name}</h3>
+        <h4 className="text-sm text-[#003366] mb-2">{PushpeshAlmiya.title}</h4>
         <p className="text-gray-600 italic">"{PushpeshAlmiya.quote}"</p>
         <Link
       to={PushpeshAlmiya.portfolioLink}
@@ -230,7 +230,7 @@ function Staff() {
     )}
   </div>
 
-  <h1 className="text-3xl md:text-4xl font-bold text-[#003366] text-center mt-10 mb-6">
+  <h1 className="text-3xl font-bold text-[#003366] text-center mt-10 mb-6">
     Administrative Staff
   </h1>
   <div className="py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-8 gap-x-5">
@@ -248,8 +248,8 @@ function Staff() {
 
         {/* Card Content */}
         <div className="p-6 flex flex-col items-center justify-center">
-          <h3 className="text-lg md:text-xl font-bold text-center">{staff.name}</h3>
-          <h4 className="text-sm md:text-lg text-[#003366] mb-2">{staff.designation}</h4>
+          <h3 className="text-lg font-bold text-center">{staff.name}</h3>
+          <h4 className="text-sm text-[#003366] mb-2">{staff.designation}</h4>
         </div>
       </div>
     ))}

@@ -41,9 +41,9 @@ const [successMessage,setSuccessMessage]=useState("")
     setFormValues({ ...formValues, [e.target.name]: e.target.value });
   };
   return (
-    <div name="contact" className="min-h-screen bg-[#f0f4fa] flex flex-col justify-center items-center py-10 px-1 md:px-6">
-      <div className="w-full md:w-2/3 lg:w-1/2 p-8 rounded-lg">
-      <h1 className="font-bold text-3xl md:text-4xl text-center mb-8 text-[#003366] ">Get in Touch</h1>
+    <div name="contact" className="min-h-screen bg-[#f0f4fa] flex flex-col justify-center items-center py-5 px-1 md:px-6">
+      <div className="w-full md:w-2/3 lg:w-1/2 p-4 rounded-lg">
+      <h1 className="font-bold text-3xl text-center mb-8 text-[#003366] ">Get in Touch</h1>
          {/* Success Message */}
          {successMessage && (
           <div className="text-center text-green-500 mb-4 font-semibold">
@@ -94,7 +94,7 @@ const [successMessage,setSuccessMessage]=useState("")
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-[#00264d] text-white md:text-xl font-semibold py-3 rounded-lg hover:bg-navy-800 transition-colors"
+            className="w-full bg-[#00264d] text-white font-semibold py-3 rounded-lg hover:bg-navy-800 transition-colors"
           >
             Submit
           </button>

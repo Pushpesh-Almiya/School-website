@@ -10,7 +10,7 @@ function Card({ cource }) {
       {/* Content */}
       <div className="px-6 py-4 bg-gradient-to-b from-gray-50 to-white">
         {/* Academic Name */}
-        <h2 className="font-bold text-2xl mb-2 text-gray-900 text-center">
+        <h2 className="font-bold text-2xl mb-2 text-[#003366] text-center">
           {cource.name}
         </h2>
 

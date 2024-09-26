@@ -20,9 +20,9 @@ function Footer() {
         <div className="flex flex-col items-center">
           <div className="flex items-center space-x-4 mb-4 justify-center md:justify-start">
             <Link to="/">
-              <Logo width="90px" />
+              <Logo width="70px" />
             </Link>
-            <h1 className="text-xl md:text-2xl font-bold text-white">GIC Darmiyan</h1>
+            <h1 className="text-xl font-bold text-white">GIC Darmiyan</h1>
           </div>
           <ul className="flex w-full flex-col space-y-2 items-center md:items-start px-20 md:px-28">
             {navItems.map((item) => (
@@ -33,7 +33,7 @@ function Footer() {
                   spy={true}
                   offset={-50}
                   duration={500}
-                  className=" text-sm md:text-xl font-semibold hover:text-[#FEECB3] transition-colors duration-200 flex items-center"
+                  className=" text-sm font-semibold hover:text-[#FEECB3] transition-colors duration-200 flex items-center"
                 >
                   <span className="mr-2">{item.icon}</span>
                   {item.name}
@@ -44,7 +44,7 @@ function Footer() {
         </div>
 
         {/* Middle Column: Contact Info */}
-        <div className="flex flex-col items-center md:items-start">
+        <div className="flex flex-col items-center md:items-start text-sm">
           <h2 className="text-xl font-bold text-white mb-4">Contact Us</h2>
           <div className="flex items-center space-x-2 mb-2">
             <FaPhoneAlt className="text-white" />
@@ -63,11 +63,11 @@ function Footer() {
         </div>
 
         {/* Right Column: Social Media (Placeholder for Future Use) */}
-        <div className="flex flex-col items-center md:items-start">
+        <div className="flex text-sm flex-col items-center md:items-start">
           <h2 className="text-xl font-bold text-white mb-4">Follow Us</h2>
           <p >Stay connected for updates!</p>
           <div className="mt-4">
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 text-sm">
               <span className="bg-white p-2 rounded-full text-[#00509e]">
                 <a href="tel:9927259263">
                   <FaPhoneAlt />
@@ -92,7 +92,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="text-center text-white mt-8">
+      <div className="text-center text-sm text-white mt-8">
         <p>&copy; {new Date().getFullYear()} GIC Darmiyan. All Rights Reserved.</p>
         <p >Developed & Maintained By <a className="text-[#00509e] font-bold" target="_blank"
       rel="noopener noreferrer" href="https://pushpesh-portfolio.netlify.app/">Pushpesh Almiya</a></p>

@@ -52,7 +52,7 @@ function Navbar() {
 
   return (
     <header
-      className={`py-2 px-4 shadow-lg bg-navy-800 fixed z-50 w-full transition-transform duration-300 ${
+      className={`px-4 shadow-lg bg-navy-800 fixed z-50 w-full transition-transform duration-300 ${
         isNavbarVisible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
@@ -63,8 +63,8 @@ function Navbar() {
             to="/"
             className="flex justify-center lg:justify-start space-x-4 items-center"
           >
-            <Logo width="80px" />
-            <h1 className="text-2xl font-bold text-white">GIC Darmiyan</h1>
+            <Logo width="70px" />
+            <h1 className="text-xl font-bold text-white">GIC Darmiyan</h1>
           </RouterLink>
         </div>
 
@@ -96,7 +96,7 @@ function Navbar() {
         <ul
           className={`${
             isOpen ? "block" : "hidden"
-          } lg:flex flex-col my-4 lg:my-0 pb-2 lg:flex-row ml-auto space-y-4 lg:space-y-0 lg:space-x-4 absolute lg:static bg-navy-800 lg:bg-transparent left-0 top-16 lg:top-auto w-full lg:w-auto z-10 lg:z-auto transition-transform duration-300`}
+          } lg:flex flex-col lg:my-0 pb-2 lg:flex-row ml-auto space-y-4 lg:space-y-0 lg:space-x-4 absolute lg:static bg-navy-800 lg:bg-transparent left-0 top-16 lg:top-auto w-full lg:w-auto z-10 lg:z-auto transition-transform duration-300`}
         >
           {navItems.map((item) => (
             <ScrollLink
@@ -107,7 +107,7 @@ function Navbar() {
               offset={-50}
               duration={500}
               onSetActive={() => handleSetActive(item.slug)}
-              className="font-semibold text-sm md:text-lg px-4 lg:py-2 md:px-0 text-[#FFFFFF] transition-colors duration-200 relative flex items-center justify-center"
+              className="font-semibold text-sm px-4 lg:py-2 md:px-0 text-[#FFFFFF] transition-colors duration-200 relative flex items-center justify-center"
             >
               <span
                 className={`relative flex items-center ${

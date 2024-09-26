@@ -18,9 +18,9 @@ const ActivitiesPage = () => {
 
   ]
   return (
-    <div name="activities" className="bg-[#f0f4fa] py-12 md:px-6 px-1 ">
+    <div name="activities" className="bg-[#f0f4fa] pt-5 md:px-6 px-1 ">
       {/* Heading */}
-      <h1 className="text-3xl md:text-4xl font-bold text-[#003366] text-center mb-6 pt-4">
+      <h1 className="text-2xl font-bold text-[#003366] text-center mb-6 pt-4">
         Student Life and Activities
       </h1>
 
@@ -44,10 +44,10 @@ const ActivitiesPage = () => {
               <span className="absolute left-0 top-1.5 w-3 h-3 md:w-4 md:h-4 bg-[#003366] rounded-full shadow-lg flex items-center justify-center">
                 <span className="w-1.5 h-1.5 bg-white md:w-2 md:h-2 bg-transparent border border-white rounded-full"></span>
               </span>
-              <h2 className="text-xl md:text-2xl font-semibold text-[#003366]">
+              <h2 className="text-xl font-semibold text-[#003366]">
                 {activity.activityName}
               </h2>
-              <p className="text-base md:text-lg text-gray-700">
+              <p className="text-base text-gray-700">
                 {activity.about}
               </p>
             </li>
