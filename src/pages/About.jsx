@@ -1,5 +1,6 @@
 import React from "react";
 import { HeroLandscape } from "../assets";
+import Carousel from "../Components/Carousel";
 
 function About() {
   return (
@@ -48,11 +49,12 @@ function About() {
 
           {/* Image Section */}
           <div className="w-full mb-5 md:mb-0 md:w-1/2 md:p-4 order-1 md:order-2">
-            <img
+            {/* <img
               src={HeroLandscape}
               alt="Activities"
               className="h-64 md:h-full w-full object-cover rounded-lg"
-            />
+            /> */}
+            <Carousel/>
           </div>
         </div>
 

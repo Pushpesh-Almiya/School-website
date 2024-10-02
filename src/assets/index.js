@@ -7,4 +7,7 @@ import Activities from "./sports.jpg";
 import ProfilePhoto from "./profilePhoto.jpg";
 import HeroPortrait from "./HeroPortrait.jpg"
 import HeroLandscape from "./HeroLandscape.jpg"
-export {computer_Science,HeroPortrait, HeroLandscape, maths,Information_technology,science,drawing, Activities,ProfilePhoto}
+import Carousel0 from "./carousel0.jpg";
+import Carousel1 from "./carousel1.jpg";
+import Carousel2 from "./carousel2.jpg";
+export {computer_Science,HeroPortrait, HeroLandscape, maths,Information_technology,science,drawing, Activities,ProfilePhoto,Carousel0,Carousel1,Carousel2}
