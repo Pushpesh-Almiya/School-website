@@ -33,7 +33,7 @@ function Academic() {
   ];
 
   return (
-    <div name="academic" className="bg-[#f0f4fa] pt-5 px-3 md:px-6">
+    <div name="academic" className="bg-[#f0f4fa]  my-4 md:px-6">
       <h2 className="text-3xl text-center font-bold text-[#003366] mb-6 pt-4">
         Academic Details
       </h2>

@@ -18,7 +18,7 @@ const ActivitiesPage = () => {
 
   ]
   return (
-    <div name="activities" className="bg-[#f0f4fa] pt-5 md:px-6 px-1 ">
+    <div name="activities" className="bg-[#f0f4fa]  my-4 md:px-6 ">
       {/* Heading */}
       <h1 className="text-2xl font-bold text-[#003366] text-center mb-6 pt-4">
         Student Life and Activities

@@ -10,6 +10,8 @@ import Activities from "./pages/Activities";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home.jsx";
 import Staff from "./pages/Staff.jsx";
+import Gallery from "./pages/Gallery.jsx";
+import MaintenancePage from "./Components/Maintenance.jsx";
 
 const router = createBrowserRouter([
   {
@@ -17,23 +19,39 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        index: true, // Default route, displays sections below HeroSection
-        element: (
-          <>
-            <Home />
-            <About />
-            <Staff />
-            <Academic />
-            <Activities />
-            <Contact />
-            {/* <Information/> */}
-          </>
-        ),
+        path: "/", // Route for Information page
+        element: <Home />,
       },
-      // {
-      //   path: "/information", // Route for Information page
-      //   element: <Information />,
-      // },
+      {
+        path: "/about", // Route for Information page
+        element: <About />,
+      },
+      {
+        path: "/staff", // Route for Information page
+        element: <Staff />,
+      },
+      {
+        path: "/academic", // Route for Information page
+        element: <Academic />,
+      },
+      {
+        path: "/activities", // Route for Information page
+        element: <Activities />,
+      },
+      {
+        path: "/contact", // Route for Information page
+        element: <Contact />,
+      },
+      {
+        path: "/gallery", // Route for Information page
+        element: <Gallery />,
+      },
+      
+      {
+        path: "/information", // Route for Information page
+        // element: <Information />,
+        element: <MaintenancePage />,
+      },
     ],
   },
 ]);

@@ -41,7 +41,7 @@ const [successMessage,setSuccessMessage]=useState("")
     setFormValues({ ...formValues, [e.target.name]: e.target.value });
   };
   return (
-    <div name="contact" className="min-h-screen bg-[#f0f4fa] flex flex-col justify-center items-center py-5 px-1 md:px-6">
+    <div name="contact" className=" bg-[#f0f4fa]  my-4 flex flex-col justify-center items-center md:px-6">
       <div className="w-full md:w-2/3 lg:w-1/2 p-4 rounded-lg">
       <h1 className="font-bold text-3xl text-center mb-8 text-[#003366] ">Get in Touch</h1>
          {/* Success Message */}

@@ -1,3 +1,3 @@
 import Pushpesh from "./Pushpesh.jpg";
-
-export {Pushpesh}
+import PalSir from "./PalSir.png"
+export {Pushpesh, PalSir}

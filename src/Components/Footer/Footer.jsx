@@ -1,16 +1,18 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import { Logo } from "../index";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaHome, FaInfoCircle,FaUserTie, FaBook, FaTasks, FaAddressBook } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaHome, FaInfoCircle,FaUserTie, FaBook, FaTasks, FaAddressBook, FaImages, FaExclamationCircle } from "react-icons/fa";
 
 function Footer() {
   const navItems = [
-    { name: "Home", slug: "home", icon: <FaHome /> },
+    { name: "Home", slug: "/", icon: <FaHome /> },
     { name: "About", slug: "about", icon: <FaInfoCircle /> },
     { name: "Faculty & Staff", slug: "staff", icon: <FaUserTie /> },
     { name: "Academics", slug: "academic", icon: <FaBook /> },
     { name: "Activities", slug: "activities", icon: <FaTasks /> },
     { name: "Contact", slug: "contact", icon: <FaAddressBook /> },
+    { name: "Gallery", slug: "gallery", icon: <FaImages /> },
+    { name: "Information", slug: "information", icon: <FaExclamationCircle /> },
   ];
 
   return (
