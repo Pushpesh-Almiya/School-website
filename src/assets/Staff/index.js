@@ -2,7 +2,7 @@ import Pushpesh from "./Pushpesh.jpg";
 import PalSir from "./PalSir.jpg";
 import HnSir from "./HnSir.jpg";
 import KdSir from "./KdSir.jpg";
-import ManishSir from "./ManishSir.jpg";
+import ManishSir from "./ManishSir.JPG";
 import ManojSir from "./ManojSir.jpg";
 import VijaySir from "./VijaySir.jpg";
 import MunniMaam from "./MunniMaam.jpg"
