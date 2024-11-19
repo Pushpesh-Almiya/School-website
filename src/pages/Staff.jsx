@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { ProfilePhoto } from "../assets";
-import { Pushpesh, PalSir, HnSir, ManojSir, KdSir, ManishSir, VijaySir, MunniMaam, NiralaSir, LohaniSir, SurendraSir, LataMaam, BoraSir, SanjaySir, ManojSirBio, BhandariSir, HemaMaam, DeepaMaam } from "../assets/Staff/index.js";
+import { Pushpesh, PalSir, HnSir, ManojSir, KdSir, ManishSir, VijaySir, MunniMaam, NiralaSir, LohaniSir, SurendraSir, LataMaam, BoraSir, SanjaySir, ManojSirBio, BhandariSir, HemaMaam, DeepaMaam } from "../assets/Staff";
 import useWindowSize from "../utils/useWindowSize";
 import { Link } from "react-router-dom";
 
