@@ -2,9 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const announcements = [
-    "जीआईसी दड़मिया, अल्मोड़ा में आपका स्वागत है।",
-    "अर्धवार्षिक परीक्षा चल रही है और 5 नवंबर तक जारी रहेगी।",
-    "दीवाली की छुट्टियां 31 अक्टूबर से 3 नवंबर तक मनाई जाएंगी।",
+    "जीआईसी दड़मिया, अल्मोड़ा में आपका स्वागत है।"
   ];
 const AnnouncementCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { ProfilePhoto } from "../assets";
-import { Pushpesh, PalSir } from "../assets/Staff";
+import { Pushpesh, PalSir, HnSir, ManojSir, KdSir, ManishSir, VijaySir, MunniMaam, NiralaSir, LohaniSir, SurendraSir, LataMaam, BoraSir, SanjaySir, ManojSirBio, BhandariSir, HemaMaam, DeepaMaam } from "../assets/Staff/index.js";
 import useWindowSize from "../utils/useWindowSize";
 import { Link } from "react-router-dom";
 
@@ -18,7 +18,7 @@ function Staff() {
 
   const Educator = [
     {
-      img: ProfilePhoto,
+      img: SanjaySir,
       name: "Mr. Sanjay Joshi",
       title: "Principal",
       quote: "Leading with wisdom and care",
@@ -30,79 +30,79 @@ function Staff() {
       quote: "Empowering through language",
     },
     {
-      img: ProfilePhoto,
+      img: ManojSirBio,
       name: "Mr. Manoj Kumar",
       title: "Biology Educator",
       quote: "Understanding life through biology",
     },
     {
-      img: ProfilePhoto,
+      img: BhandariSir,
       name: "Mr. Harish Singh Bhandari",
       title: "Sports Trainer",
       quote: "Training minds and bodies for excellence",
     },
     {
-      img: ProfilePhoto,
+      img: NiralaSir,
       name: "Mr. Jay Prakash",
       title: "Social Science Educator",
       quote: "Economics for a better tomorrow",
     },
     {
-      img: ProfilePhoto,
+      img: LohaniSir,
       name: "Mr. Girish Chandra Lohani",
       title: "Maths Educator",
       quote: "Exploring the laws of the universe",
     },
     {
-      img: ProfilePhoto,
+      img: HnSir,
       name: "Mr. Hemwati Nandan",
       title: "Sanskrit Educator",
       quote: "Preserving ancient wisdom",
     },
     {
-      img: ProfilePhoto,
+      img: SurendraSir,
       name: "Mr. Surendra Kumar",
       title: "English Educator",
       quote: "Crafting skills for life through language",
     },
     {
-      img: ProfilePhoto,
+      img: ManojSir,
       name: "Mr. Manoj Kumar",
       title: "Social Science Educator",
       quote: "Shaping perspectives on society",
     },
     {
-      img: ProfilePhoto,
+      img: KdSir,
       name: "Mr. Keshav Dutt Joshi",
       title: "Hindi Educator",
       quote: "Enriching minds through Hindi",
     },
     {
-      img: ProfilePhoto,
+      img: MunniMaam,
       name: "Mrs. Munni Tamta",
       title: "Science Educator",
       quote: "Unveiling the wonders of science",
     },
     {
-      img: ProfilePhoto,
+      img: LataMaam,
       name: "Lata Verma ma'am",
       title: "Drawing Educator",
       quote: "Expressing creativity through art",
     },
     {
-      img: ProfilePhoto,
+      img: BoraSir,
       name: "Mr. Gopal Singh Bora",
       title: "Sociology Educator",
       quote: "Understanding society's fabric",
     },
     {
-      img: ProfilePhoto,
+      img: ManishSir,
       name: "Mr. Manish Pandey",
       title: "Political Science Educator",
       quote: "Empowering through political insight",
     },
     {
-      img: ProfilePhoto,
+      img: VijaySir,
       name: "Mr. Vijay Shankar Joshi",
       title: "Sanskrit Educator",
       quote: "Reviving the essence of Sanskrit",
@@ -114,7 +114,7 @@ function Staff() {
       quote: "Discovering the magic of chemistry",
     },
     {
-      img: ProfilePhoto,
+      img: HemaMaam,
       name: "Mrs. Hema Arya",
       title: "English Educator",
       quote: "Mastering communication through English",
@@ -122,22 +122,22 @@ function Staff() {
   ];
   const OfficeStaff = [
     {
-      img: "https://via.placeholder.com/150",
+      img:ProfilePhoto,
       name: "Mr. Manoj Kumar Kandpal",
       designation: "Chief Assistant",
     },
     {
-      img: "https://via.placeholder.com/150",
+      img: DeepaMaam,
       name: "Miss Deepa Kaira",
       designation: "Junior Assistant",
     },
     {
-      img: "https://via.placeholder.com/150",
+      img: ProfilePhoto,
       name: "Mr. Diwan Singh",
       designation: "Attendant",
     },
     {
-      img: "https://via.placeholder.com/150",
+      img: ProfilePhoto,
       name: "Mr. Kiran Prakash Singh Papola",
       designation: "Attendant",
     },
@@ -172,7 +172,7 @@ function Staff() {
             <img
               src={teacher.img}
               alt={teacher.name}
-              className="w-3/4 object-cover object-top rounded-full border border-blue-500 p-1"
+              className="w-3/4 object-cover object-top rounded-full border border-blue-5npm 00 p-1"
             />
 
             {/* Card Content */}
@@ -244,7 +244,7 @@ function Staff() {
           >
             {/* Profile Photo */}
             <img
-              src={ProfilePhoto}
+              src={staff.img}
               alt={staff.name}
               className="w-3/4 object-cover object-top rounded-full border border-purple-500 p-1"
             />

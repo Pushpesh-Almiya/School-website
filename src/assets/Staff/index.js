@@ -1,3 +1,19 @@
 import Pushpesh from "./Pushpesh.jpg";
-import PalSir from "./PalSir.png"
-export {Pushpesh, PalSir}
+import PalSir from "./PalSir.jpg";
+import HnSir from "./HnSir.jpg";
+import KdSir from "./KdSir.jpg";
+import ManishSir from "./ManishSir.jpg";
+import ManojSir from "./ManojSir.jpg";
+import VijaySir from "./VijaySir.jpg";
+import MunniMaam from "./MunniMaam.jpg"
+import LataMaam from  "./LataMaam.jpg"
+import LohaniSir from "./LohaniSir.jpg"
+import NiralaSir from "./NiralaSir.jpg"
+import SanjaySir from "./SanjaySir.jpg"
+import SurendraSir from "./SurendraSir.jpg"
+import BoraSir from "./BoraSir.jpg"
+import BhandariSir from "./BhandariSir.jpg"
+import HemaMaam from "./HemaMaam.jpg"
+import ManojSirBio from "./ManojSirBio.jpg"
+import DeepaMaam from "./DeepaMaam.jpg"
+export { Pushpesh, PalSir,DeepaMaam, ManishSir, BhandariSir, HemaMaam, ManojSirBio, ManojSir, KdSir, HnSir, VijaySir, MunniMaam, LataMaam, NiralaSir, LohaniSir, SanjaySir, SurendraSir, BoraSir};
